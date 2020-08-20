@@ -1,0 +1,34 @@
+.numberbutton {
+    -fx-text-fill: white;
+    -fx-background-color: #3b3937;
+}
+
+.operatorbutton {
+    -fx-text-fill: white;
+    -fx-background-color: #eb8f1e;
+}
+
+.functionbutton {
+    -fx-text-fill: black;
+    -fx-background-color: white;
+}
+
+.numberbutton:hover {
+    -fx-text-fill: white;
+    -fx-background-color: #5c5a59;
+}
+
+.operatorbutton:hover {
+    -fx-text-fill: white;
+    -fx-background-color: #f2a950;
+}
+
+.functionbutton:hover {
+    -fx-text-fill: black;;
+    -fx-background-color: #c4c2c0;
+}
+
+.operatorbutton_active {
+    -fx-text-fill: #eb8f1e;
+    -fx-background-color: white;
+}

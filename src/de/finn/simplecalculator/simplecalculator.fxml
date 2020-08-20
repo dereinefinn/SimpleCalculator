@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="535.0"
+            prefWidth="350.0" style="-fx-background-color: #0c0d0d;" xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.finn.simplecalculator.Controller">
+
+   <Label id="displayedText" fx:id="displayedText" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="18.0"
+          layoutY="22.0" prefHeight="79.0" prefWidth="315.0" text="0" textAlignment="RIGHT" textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="63.0"/>
+      </font>
+   </Label>
+   <Button id="acButton" fx:id="acButton" layoutX="21.0" layoutY="123.0" mnemonicParsing="false"
+           onAction="#onACButtonClicked" prefHeight="64.0" prefWidth="64.0" styleClass="functionbutton"
+           stylesheets="@styles/styles.css" text="AC">
+      <font>
+         <Font name="System Bold" size="22.0"/>
+      </font>
+   </Button>
+   <Button id="plusMinusButton" layoutX="101.0" layoutY="123.0" mnemonicParsing="false"
+           onAction="#onPlusMinusButtonClicked" prefHeight="64.0" prefWidth="64.0" styleClass="functionbutton"
+           stylesheets="@styles/styles.css" text="+/-">
+      <font>
+         <Font name="System Bold" size="21.0"/>
+      </font>
+   </Button>
+   <Button id="percentButton" layoutX="184.0" layoutY="123.0" mnemonicParsing="false" onAction="#onPercentButtonClicked"
+           prefHeight="64.0" prefWidth="64.0" styleClass="functionbutton" stylesheets="@styles/styles.css" text="\%">
+      <font>
+         <Font name="System Bold" size="25.0"/>
+      </font>
+   </Button>
+   <Button id="plusButton" fx:id="plusButton" layoutX="261.0" layoutY="353.0" mnemonicParsing="false"
+           onAction="#onPlusButtonClicked" prefHeight="64.0" prefWidth="64.0" styleClass="operatorbutton"
+           stylesheets="@styles/styles.css" text="+" textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="25.0"/>
+      </font>
+   </Button>
+   <Button id="minusButton" fx:id="minusButton" layoutX="261.0" layoutY="276.0" mnemonicParsing="false"
+           onAction="#onMinusButtonClicked" prefHeight="64.0" prefWidth="64.0" styleClass="operatorbutton"
+           stylesheets="@styles/styles.css" text="-" textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="25.0"/>
+      </font>
+   </Button>
+   <Button id="multiplyButton" fx:id="multiplyButton" layoutX="261.0" layoutY="197.0" mnemonicParsing="false"
+           onAction="#onMultiplyButtonClicked" prefHeight="64.0" prefWidth="64.0" styleClass="operatorbutton"
+           stylesheets="@styles/styles.css" text="x" textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="24.0"/>
+      </font>
+   </Button>
+   <Button id="divideButton" fx:id="divideButton" layoutX="261.0" layoutY="123.0" mnemonicParsing="false"
+           onAction="#onDivideButtonClicked" prefHeight="64.0" prefWidth="64.0" styleClass="operatorbutton"
+           stylesheets="@styles/styles.css" text="÷" textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="25.0"/>
+      </font>
+   </Button>
+   <Button id="equalsButton" layoutX="261.0" layoutY="430.0" mnemonicParsing="false" onAction="#onEqualsButtonClicked"
+           prefHeight="64.0" prefWidth="64.0" styleClass="operatorbutton" stylesheets="@styles/styles.css" text="="
+           textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="25.0"/>
+      </font>
+   </Button>
+   <Button id="commaButton" layoutX="184.0" layoutY="430.0" mnemonicParsing="false" onAction="#onCommaButtonClicked"
+           prefHeight="64.0" prefWidth="64.0" styleClass="numberbutton" stylesheets="@styles/styles.css" text=","
+           textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="25.0"/>
+      </font>
+   </Button>
+   <Button id="nineButton" layoutX="184.0" layoutY="197.0" mnemonicParsing="false" onAction="#onNineButtonClicked"
+           prefHeight="64.0" prefWidth="64.0" styleClass="numberbutton" stylesheets="@styles/styles.css" text="9"
+           textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="25.0"/>
+      </font>
+   </Button>
+   <Button id="eightButton" layoutX="101.0" layoutY="197.0" mnemonicParsing="false" onAction="#onEightButtonClicked"
+           prefHeight="64.0" prefWidth="64.0" styleClass="numberbutton" stylesheets="@styles/styles.css" text="8"
+           textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="25.0"/>
+      </font>
+   </Button>
+   <Button id="sevenButton" layoutX="21.0" layoutY="197.0" mnemonicParsing="false" onAction="#onSevenButtonClicked"
+           prefHeight="64.0" prefWidth="64.0" styleClass="numberbutton" stylesheets="@styles/styles.css" text="7"
+           textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="25.0"/>
+      </font>
+   </Button>
+   <Button id="sixButton" layoutX="184.0" layoutY="276.0" mnemonicParsing="false" onAction="#onSixButtonClicked"
+           prefHeight="64.0" prefWidth="64.0" styleClass="numberbutton" stylesheets="@styles/styles.css" text="6"
+           textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="25.0"/>
+      </font>
+   </Button>
+   <Button id="fiveButton" layoutX="101.0" layoutY="276.0" mnemonicParsing="false" onAction="#onFiveButtonClicked"
+           prefHeight="64.0" prefWidth="64.0" styleClass="numberbutton" stylesheets="@styles/styles.css" text="5"
+           textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="25.0"/>
+      </font>
+   </Button>
+   <Button id="fourButton" layoutX="21.0" layoutY="276.0" mnemonicParsing="false" onAction="#onFourButtonClicked"
+           prefHeight="64.0" prefWidth="64.0" styleClass="numberbutton" stylesheets="@styles/styles.css" text="4"
+           textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="25.0"/>
+      </font>
+   </Button>
+   <Button id="threeButton" layoutX="184.0" layoutY="353.0" mnemonicParsing="false" onAction="#onThreeButtonClicked"
+           prefHeight="64.0" prefWidth="64.0" styleClass="numberbutton" stylesheets="@styles/styles.css" text="3"
+           textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="25.0"/>
+      </font>
+   </Button>
+   <Button id="twoButton" layoutX="101.0" layoutY="353.0" mnemonicParsing="false" onAction="#onTwoButtonClicked"
+           prefHeight="64.0" prefWidth="64.0" styleClass="numberbutton" stylesheets="@styles/styles.css" text="2"
+           textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="25.0"/>
+      </font>
+   </Button>
+   <Button id="oneButton" layoutX="21.0" layoutY="353.0" mnemonicParsing="false" onAction="#onOneButtonClicked"
+           prefHeight="64.0" prefWidth="64.0" styleClass="numberbutton" stylesheets="@styles/styles.css" text="1"
+           textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="25.0"/>
+      </font>
+   </Button>
+   <Button id="zeroButton" layoutX="21.0" layoutY="430.0" mnemonicParsing="false" onAction="#onZeroButtonClicked"
+           prefHeight="64.0" prefWidth="146.0" styleClass="numberbutton" stylesheets="@styles/styles.css" text="0"
+           textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="25.0"/>
+      </font>
+   </Button>
+</AnchorPane>
